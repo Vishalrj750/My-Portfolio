@@ -135,8 +135,8 @@ function Projects() {
                             <li>Being a team lead had some extra responsibility of overall flow of the website</li>
                         </ul>
                         <div className="project-items-right-btns">
-                            <a href="https://jolly-hawking-c11904.netlify.app/" target={'_blank'}><button>Live</button></a>
-                            <a href="https://github.com/Vishalrj750/Final_Kfc_Repo" target={'_blank'}><button>Git Hub</button></a>
+                            <a href="https://jolly-hawking-c11904.netlify.app/" target={'_blank'} rel="noreferrer"><button>Live</button></a>
+                            <a href="https://github.com/Vishalrj750/Final_Kfc_Repo" target={'_blank'} rel="noreferrer"><button>Git Hub</button></a>
                         </div>
                     </div>
                 </div>
@@ -155,8 +155,8 @@ function Projects() {
                             <li>Being a team lead had some extra responsibility of overall flow of the website</li>
                         </ul>
                         <div className="project-items-right-btns">
-                            <a href="https://myntracloneusingredux.netlify.app/" target={'_blank'}><button>Live</button></a>
-                            <a href="https://github.com/Vishalrj750/Myntra_Clone" target={'_blank'}><button>Git Hub</button></a>
+                            <a href="https://myntracloneusingredux.netlify.app/" target={'_blank'} rel="noreferrer"><button>Live</button></a>
+                            <a href="https://github.com/Vishalrj750/Myntra_Clone" target={'_blank'} rel="noreferrer"><button>Git Hub</button></a>
                         </div>
                     </div>
                 </div>

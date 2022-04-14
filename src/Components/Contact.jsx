@@ -94,13 +94,13 @@ function Contact() {
                         <p>8574031285</p>
                     </div>
                     <div className="github">
-                        <a href="https://github.com/Vishalrj750/" target={'_blank'}>
+                        <a href="https://github.com/Vishalrj750/" target={'_blank'} rel="noreferrer">
                             <img src="github.png" alt="github_logo" />
                             <p>Git Hub</p>
                         </a>
                     </div>
                     <div className="linkedin">
-                        <a href="https://www.linkedin.com/in/vishal-singh-a9b811190/" target={'_blank'}>
+                        <a href="https://www.linkedin.com/in/vishal-singh-a9b811190/" target={'_blank'} rel="noreferrer">
                             <img src="linkedin.png" alt="linkedin_logo" />
                             <p>Linkedin</p>
                         </a>
