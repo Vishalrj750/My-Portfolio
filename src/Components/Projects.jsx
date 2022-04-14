@@ -10,9 +10,11 @@ margin-bottom: 100px;
 }
 
 .heading h2 {
-    font-size: 50px;
+    font-family: 'Lobster', cursive;
+    font-size: 80px;
     font-weight: bold;
     color: blue;
+    margin-bottom: 0px;
 }
 
 .project-items {
@@ -82,6 +84,33 @@ margin-bottom: 100px;
     padding-right: 15px;
     border-radius: 25px;
     cursor: pointer;
+}
+
+@media (max-width: 412px) {
+    .project-items {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: aliceblue;
+        box-shadow: 10px 10px 5px #cecece;
+    }
+
+    .project-items-left {
+        flex: 1;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .project-items-right {
+        flex: 2;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 `
 

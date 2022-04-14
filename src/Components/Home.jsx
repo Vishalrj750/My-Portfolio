@@ -93,6 +93,40 @@ margin-bottom: 100px;
     border-radius: 20px;
     cursor: pointer; 
 }
+
+@media (max-width: 412px) {
+    #home {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        // gap: 15%;
+        padding: 20px;
+    }
+
+    .hello {
+        font-family: 'Source Serif Pro', serif;
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 0px;
+        color: blue;
+    }
+
+    .name {
+        font-family: 'Lobster', cursive;
+        font-size: 60px;
+        font-weight: bold;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .profession {
+        font-family: 'Source Serif Pro', serif;
+        font-size: 30px;
+        color: red;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
 `
 
 function Home() {

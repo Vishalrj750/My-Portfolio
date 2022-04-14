@@ -3,7 +3,8 @@ import styled from "styled-components";
 
 const NavbarWrapper = styled.div`
 .nav {
-    font-family: 'Source Serif Pro', serif;
+    // font-family: 'Source Serif Pro', serif;
+    font-family: 'Lobster', cursive;
     width: 100vw;
     height: 80px;
     background-color: aliceblue;
@@ -31,7 +32,28 @@ const NavbarWrapper = styled.div`
     padding-right: 20%
 }
 
-// @media (max-width: )
+.nav-right a {
+    text-decoration: none;
+    color: brown;
+}
+
+@media (max-width: 412px) {
+    .nav-left {
+        height: 80px;
+        margin-left: 5%;
+    }
+    .nav-right {
+        display: flex;
+        gap: 10%;
+        align-items: center;
+        justify-content: center;
+        padding-left: 15%;
+        padding-right: 20%
+    }
+    .nav-right h1 {
+        display: none;
+    }
+}
 
 .nav-right h1 {
     font-size: 22px;
@@ -48,10 +70,6 @@ const NavbarWrapper = styled.div`
 .home-logo img {
     width: 100%;
 }
-.home-about a {
-    text-decoration: none;
-    color: black;
-}
 
 .about {
     display: flex;
@@ -64,9 +82,17 @@ const NavbarWrapper = styled.div`
 .about-logo img {
     width: 100%;
 }
-.about-about a {
-    text-decoration: none;
-    color: black;
+
+.skills {
+    display: flex;
+}
+.skills-logo {
+    width: 30px;
+    padding-top: 15px;
+    padding-right: 10px;
+}
+.skills-logo img {
+    width: 100%;
 }
 
 .projects {
@@ -80,10 +106,6 @@ const NavbarWrapper = styled.div`
 .projects-logo img {
     width: 100%;
 }
-.projects-about a {
-    text-decoration: none;
-    color: black;
-}
 
 .contact {
     display: flex;
@@ -96,10 +118,6 @@ const NavbarWrapper = styled.div`
 .contact-logo img {
     width: 100%;
 }
-.contact-about a {
-    text-decoration: none;
-    color: black;
-}
 `
 
 function Navbar() {
@@ -110,38 +128,56 @@ function Navbar() {
                     <img src="Vishal_singh.gif" alt="logo" className="nav-logo" />
                 </div>
                 <div className="nav-right">
-                    <div className="home">
-                        <div className="home-logo">
-                            <img src="Home.png" alt="" />
+                    <a href="#home">
+                        <div className="home">
+                            <div className="home-logo">
+                                <img src="Home.png" alt="home_logo" />
+                            </div>
+                            <div className="home-about">
+                                <h1>Home</h1>
+                            </div>
                         </div>
-                        <div className="home-about">
-                            <a href="#home"><h1>Home</h1></a>
+                    </a>
+                    <a href="#about">
+                        <div className="about">
+                            <div className="about-logo">
+                                <img src="about.png" alt="about_logo" />
+                            </div>
+                            <div className="about-about">
+                                <h1>About</h1>
+                            </div>
                         </div>
-                    </div>
-                    <div className="about">
-                        <div className="about-logo">
-                            <img src="about.png" alt="" />
+                    </a>
+                    <a href="#skills">
+                        <div className="skills">
+                            <div className="skills-logo">
+                                <img src="skills2.png" alt="skills_logo" />
+                            </div>
+                            <div className="skills-about">
+                                <h1>Skills</h1>
+                            </div>
                         </div>
-                        <div className="about-about">
-                            <a href="#about"><h1>About</h1></a>
+                    </a>
+                    <a href="#project">
+                        <div className="projects">
+                            <div className="projects-logo">
+                                <img src="Projects.png" alt="project_logo" />
+                            </div>
+                            <div className="projects-about">
+                                <h1>Project</h1>
+                            </div>
                         </div>
-                    </div>
-                    <div className="projects">
-                        <div className="projects-logo">
-                            <img src="Projects.png" alt="" />
+                    </a>
+                    <a href="#contact">
+                        <div className="contact">
+                            <div className="contact-logo">
+                                <img src="Contact.png" alt="contact_logo" />
+                            </div>
+                            <div className="contact-about">
+                                <h1>Contact</h1>
+                            </div>
                         </div>
-                        <div className="projects-about">
-                            <a href="#project"><h1>Project</h1></a>
-                        </div>
-                    </div>
-                    <div className="contact">
-                        <div className="contact-logo">
-                            <img src="Contact.png" alt="" />
-                        </div>
-                        <div className="contact-about">
-                            <a href="#contact"><h1>Contact</h1></a>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </NavbarWrapper>

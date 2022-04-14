@@ -10,9 +10,11 @@ margin-bottom: 100px;
 }
 
 .heading h2 {
-    font-size: 50px;
+    font-family: 'Lobster', cursive;
+    font-size: 80px;
     font-weight: bold;
     color: blue;
+    margin-bottom: 0px;
 }
 
 .contact {

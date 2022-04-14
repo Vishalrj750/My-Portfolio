@@ -10,9 +10,11 @@ margin-bottom: 100px;
 }
 
 .heading-div h2 {
-    font-size: 50px;
+    font-family: 'Lobster', cursive;
+    font-size: 80px;
     font-weight: bold;
     color: blue;
+    margin-bottom: 0px;
 }
 
 .heading-items {
@@ -42,85 +44,165 @@ margin-bottom: 100px;
     font-weight: bold;
 }
 
-.skills {
-    width: 100vw;
+.skills-top {
+    width: 60vw;
     display: flex;
     gap: 2%;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(30%);
+}
+
+.skills-bottom {
+    width: 60vw;
+    display: flex;
+    gap: 2%;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(30%);
 }
 
 .html {
-    flex: 1;
+    width: 30%;
+    background-color: #cecece;
+    border-radius: 25px;
 }
 .html img {
-    width: 80%;
+    width: 85%;
+}
+.html p {
+    font-weight: bold;
 }
 
 .css {
-    flex: 1;
+    width: 30%;
+    background-color: #cecece;
+    border-radius: 25px;
 }
 .css img {
     width: 60%;
 }
+.css p {
+    font-weight: bold;
+}
 
 .js {
-    flex: 1;
+    width: 30%;
+    background-color: #cecece;
+    border-radius: 25px;
 }
 .js img {
-    width: 80%;
+    width: 85%;
+}
+.js p {
+    font-weight: bold;
 }
 
 .react {
-    flex: 1;
+    width: 30%;
+    background-color: #cecece;
+    border-radius: 25px;
 }
 .react img {
-    padding-top: 25px;
     width: 100%;
+}
+.react p {
+    font-weight: bold;
 }
 
 .redux {
-    flex: 1;
+    width: 30%;
+    background-color: #cecece;
+    border-radius: 25px;
 }
 .redux img {
-    padding-top: 15px;
-    width: 100%;
+    width: 95%;
+}
+.redux p {
+    font-weight: bold;
 }
 
 .node {
-    flex: 1;
+    width: 30%;
+    background-color: #cecece;
+    border-radius: 25px;
 }
 .node img {
-    padding-top: 20px;
-    width: 100%;
+    width: 85%;
+}
+.node p {
+    font-weight: bold;
 }
 
 .mongo {
-    flex: 1;
+    width: 30%;
+    background-color: #cecece;
+    border-radius: 25px;
 }
 .mongo img {
-    padding-top: 10px;
-    width: 100%;
+    width: 80%;
+}
+.mongo p {
+    font-weight: bold;
+}
+
+.express {
+    width: 30%;
+    background-color: #cecece;
+    border-radius: 25px;
+}
+.express img {
+    width: 90%;
+}
+.express p {
+    font-weight: bold;
 }
 
 .mysql {
-    flex: 1;
+    width: 30%;
+    background-color: #cecece;
+    border-radius: 25px;
 }
 .mysql img {
-    width: 90%;
+    width: 100%;
+}
+.mysql p {
+    font-weight: bold;
 }
 
 .ds {
-    flex: 1;
+    width: 30%;
+    background-color: #cecece;
+    border-radius: 25px;
 }
 .ds img {
-    width: 100%;
+    width: 85%;
+}
+.ds p {
+    font-weight: bold;
 }
 
 .skills-heading-div h3 {
-    font-size: 35px;
+    font-family: 'Lobster', cursive;
+    font-size: 80px;
     font-weight: bold;
     color: blue;
+}
+
+#skills {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 412px) {
+    .heading-items {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .html p, .css p, .js p, .react p, .redux p, .node p, .mongo p, .express p, .mysql p, .ds p {
+        display: none;
+    }
 }
 
 
@@ -142,37 +224,52 @@ function About() {
                         <p>Fast forwarding to today, I built a number of web applications and 2 major projects. Learned a great deal about teamwork, leadership and communication. After months of regorous training, here I am looking for an oppertunity as a full stack web developer.</p>
                     </div>
                 </div>
-                <div className="skkills-div">
+                <div id="skills">
                     <div className="skills-heading-div">
                         <h3>I am Proficient in</h3>
                     </div>
-                    <div className="skills">
+                    <div className="skills-top">
                         <div className="html">
-                            <img src="html.jpg" alt="HTML" />
+                            <img src="html.png" alt="HTML" />
+                            <p>HTML5</p>
                         </div>
                         <div className="css">
-                            <img src="css.png" alt="CSS" />
+                            <img src="css2.png" alt="CSS" />
+                            <p>CSS3</p>
                         </div>
                         <div className="js">
                             <img src="js.png" alt="JS" />
+                            <p>JAVASCRIPT</p>
                         </div>
                         <div className="react">
                             <img src="react.png" alt="React" />
+                            <p>REACT</p>
                         </div>
                         <div className="redux">
-                            <img src="redux.jpg" alt="Redux" />
+                            <img src="redux.png" alt="Redux" />
+                            <p>REDUX</p>
                         </div>
+                    </div>
+                    <div className="skills-bottom">
                         <div className="node">
                             <img src="node.png" alt="Node" />
+                            <p>NodeJS</p>
                         </div>
                         <div className="mongo">
-                            <img src="mongo.jpg" alt="Mongo" />
+                            <img src="mongo.png" alt="Mongo" />
+                            <p>MongoDB</p>
+                        </div>
+                        <div className="express">
+                            <img src="express.png" alt="Express" />
+                            <p>ExpressJS</p>
                         </div>
                         <div className="mysql">
                             <img src="mysql.png" alt="MySQL" />
+                            <p>mySQL</p>
                         </div>
                         <div className="ds">
-                            <img src="ds.jpg" alt="DS_ALGO" />
+                            <img src="ds2.webp" alt="DS_ALGO" />
+                            <p>Data Structures and Algorithm</p>
                         </div>
                     </div>
                 </div>
