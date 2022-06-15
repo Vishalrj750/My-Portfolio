@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const AboutWrapper = styled.div`
+const AboutWrapper = styled.div `
 margin-top: 100px;
 margin-bottom: 100px;
 
@@ -209,7 +209,7 @@ margin-bottom: 100px;
 `
 
 function About() {
-    return(
+    return (
         <AboutWrapper>
             <div id="about">
                 <div className="heading-div">
@@ -217,7 +217,7 @@ function About() {
                 </div>
                 <div className="heading-items">
                     <div className="heading-left">
-                        <img src="https://raw.githubusercontent.com/himrd95/me_Himanshu/main/public/developer.gif" alt="gif" />
+                        <img src="https://raw.githubusercontent.com/himrd95/me_Himanshu/main/public/developer.gif" alt="gif"/>
                     </div>
                     <div className="heading-right">
                         <p>Hello! My name is Vishal and I enjoy creating things that live on the Internet. My interest in web development started back last year when I was trying to edit things on the web - taught me a lot about HTML and CSS.</p>
@@ -230,45 +230,45 @@ function About() {
                     </div>
                     <div className="skills-top">
                         <div className="html">
-                            <img src="html.png" alt="HTML" />
+                            <img src="html.png" alt="HTML"/>
                             <p>HTML5</p>
                         </div>
                         <div className="css">
-                            <img src="css2.png" alt="CSS" />
+                            <img src="css2.png" alt="CSS"/>
                             <p>CSS3</p>
                         </div>
                         <div className="js">
-                            <img src="js.png" alt="JS" />
+                            <img src="js.png" alt="JS"/>
                             <p>JAVASCRIPT</p>
                         </div>
                         <div className="react">
-                            <img src="react.png" alt="React" />
+                            <img src="react.png" alt="React"/>
                             <p>REACT</p>
                         </div>
                         <div className="redux">
-                            <img src="redux.png" alt="Redux" />
+                            <img src="redux.png" alt="Redux"/>
                             <p>REDUX</p>
                         </div>
                     </div>
                     <div className="skills-bottom">
                         <div className="node">
-                            <img src="node.png" alt="Node" />
+                            <img src="node.png" alt="Node"/>
                             <p>NodeJS</p>
                         </div>
                         <div className="mongo">
-                            <img src="mongo.png" alt="Mongo" />
+                            <img src="mongo.png" alt="Mongo"/>
                             <p>MongoDB</p>
                         </div>
                         <div className="express">
-                            <img src="express.png" alt="Express" />
+                            <img src="express.png" alt="Express"/>
                             <p>ExpressJS</p>
                         </div>
                         <div className="mysql">
-                            <img src="mysql.png" alt="MySQL" />
+                            <img src="mysql.png" alt="MySQL"/>
                             <p>mySQL</p>
                         </div>
                         <div className="ds">
-                            <img src="ds2.webp" alt="DS_ALGO" />
+                            <img src="ds2.webp" alt="DS_ALGO"/>
                             <p>Data Structures and Algorithm</p>
                         </div>
                     </div>
@@ -278,4 +278,6 @@ function About() {
     )
 }
 
-export { About }
+export {
+    About
+}
